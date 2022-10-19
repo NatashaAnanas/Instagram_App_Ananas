@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		4187A9EB28FDE93E0025AC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187A9EA28FDE93E0025AC55 /* AppDelegate.swift */; };
 		4187A9ED28FDE93E0025AC55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187A9EC28FDE93E0025AC55 /* SceneDelegate.swift */; };
-		4187A9EF28FDE93E0025AC55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187A9EE28FDE93E0025AC55 /* ViewController.swift */; };
+		4187A9EF28FDE93E0025AC55 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187A9EE28FDE93E0025AC55 /* HouseViewController.swift */; };
 		4187A9F228FDE93E0025AC55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4187A9F028FDE93E0025AC55 /* Main.storyboard */; };
 		4187A9F428FDE9420025AC55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4187A9F328FDE9420025AC55 /* Assets.xcassets */; };
 		4187A9F728FDE9420025AC55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4187A9F528FDE9420025AC55 /* LaunchScreen.storyboard */; };
+		4187AA0228FDEDFA0025AC55 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AA0128FDEDFA0025AC55 /* SearchViewController.swift */; };
+		4187AA0428FDEE2F0025AC55 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AA0328FDEE2E0025AC55 /* AddViewController.swift */; };
+		4187AA0628FDEF750025AC55 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AA0528FDEF750025AC55 /* LikeViewController.swift */; };
+		4187AA0828FDF9870025AC55 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AA0728FDF9870025AC55 /* ProfilViewController.swift */; };
+		4187AA0A28FEA2820025AC55 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4187AA0928FEA2810025AC55 /* Color.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4187A9E728FDE93E0025AC55 /* Instagram_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4187A9EA28FDE93E0025AC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4187A9EC28FDE93E0025AC55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4187A9EE28FDE93E0025AC55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4187A9EE28FDE93E0025AC55 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		4187A9F128FDE93E0025AC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4187A9F328FDE9420025AC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4187A9F628FDE9420025AC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4187A9F828FDE9420025AC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4187AA0128FDEDFA0025AC55 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4187AA0328FDEE2E0025AC55 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		4187AA0528FDEF750025AC55 /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		4187AA0728FDF9870025AC55 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		4187AA0928FEA2810025AC55 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,26 @@
 			children = (
 				4187A9EA28FDE93E0025AC55 /* AppDelegate.swift */,
 				4187A9EC28FDE93E0025AC55 /* SceneDelegate.swift */,
-				4187A9EE28FDE93E0025AC55 /* ViewController.swift */,
+				4187AA0D28FED6EA0025AC55 /* Controllers */,
 				4187A9F028FDE93E0025AC55 /* Main.storyboard */,
 				4187A9F328FDE9420025AC55 /* Assets.xcassets */,
+				4187AA0928FEA2810025AC55 /* Color.xcassets */,
 				4187A9F528FDE9420025AC55 /* LaunchScreen.storyboard */,
 				4187A9F828FDE9420025AC55 /* Info.plist */,
 			);
 			path = Instagram_App;
+			sourceTree = "<group>";
+		};
+		4187AA0D28FED6EA0025AC55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4187A9EE28FDE93E0025AC55 /* HouseViewController.swift */,
+				4187AA0728FDF9870025AC55 /* ProfilViewController.swift */,
+				4187AA0528FDEF750025AC55 /* LikeViewController.swift */,
+				4187AA0328FDEE2E0025AC55 /* AddViewController.swift */,
+				4187AA0128FDEDFA0025AC55 /* SearchViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4187A9F728FDE9420025AC55 /* LaunchScreen.storyboard in Resources */,
+				4187AA0A28FEA2820025AC55 /* Color.xcassets in Resources */,
 				4187A9F428FDE9420025AC55 /* Assets.xcassets in Resources */,
 				4187A9F228FDE93E0025AC55 /* Main.storyboard in Resources */,
 			);
@@ -160,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4187A9EF28FDE93E0025AC55 /* ViewController.swift in Sources */,
+				4187AA0828FDF9870025AC55 /* ProfilViewController.swift in Sources */,
+				4187AA0228FDEDFA0025AC55 /* SearchViewController.swift in Sources */,
+				4187AA0628FDEF750025AC55 /* LikeViewController.swift in Sources */,
+				4187AA0428FDEE2F0025AC55 /* AddViewController.swift in Sources */,
+				4187A9EF28FDE93E0025AC55 /* HouseViewController.swift in Sources */,
 				4187A9EB28FDE93E0025AC55 /* AppDelegate.swift in Sources */,
 				4187A9ED28FDE93E0025AC55 /* SceneDelegate.swift in Sources */,
 			);

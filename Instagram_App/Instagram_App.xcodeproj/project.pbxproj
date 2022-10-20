@@ -68,7 +68,7 @@
 			children = (
 				4187A9EA28FDE93E0025AC55 /* AppDelegate.swift */,
 				4187A9EC28FDE93E0025AC55 /* SceneDelegate.swift */,
-				4187AA0D28FED6EA0025AC55 /* Controllers */,
+				4187AA0D28FED6EA0025AC55 /* Controller */,
 				4187A9F028FDE93E0025AC55 /* Main.storyboard */,
 				4187A9F328FDE9420025AC55 /* Assets.xcassets */,
 				4187AA0928FEA2810025AC55 /* Color.xcassets */,
@@ -78,7 +78,7 @@
 			path = Instagram_App;
 			sourceTree = "<group>";
 		};
-		4187AA0D28FED6EA0025AC55 /* Controllers */ = {
+		4187AA0D28FED6EA0025AC55 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				4187A9EE28FDE93E0025AC55 /* HouseViewController.swift */,
@@ -87,7 +87,7 @@
 				4187AA0328FDEE2E0025AC55 /* AddViewController.swift */,
 				4187AA0128FDEDFA0025AC55 /* SearchViewController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

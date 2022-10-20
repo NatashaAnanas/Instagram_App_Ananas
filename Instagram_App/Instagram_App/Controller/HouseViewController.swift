@@ -9,13 +9,13 @@ import UIKit
 
 /// Главная страница - лента инстаграм
 final class HouseViewController: UIViewController {
-    // MARK: - Private VConstant
+    // MARK: - Private Constant
     private enum Constant {
         static let indentifireStoryText = "story"
         static let indentifirePostText = "post"
         static let indentifireRecText = "rec"
     }
-    // MARK: - IBOutlet
+    // MARK: - Private IBOutlet
     @IBOutlet private weak var instTableView: UITableView!
 
     // MARK: - Private Visual Components

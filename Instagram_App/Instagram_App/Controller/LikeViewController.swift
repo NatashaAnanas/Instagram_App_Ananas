@@ -10,6 +10,7 @@ import UIKit
 /// Уведомления пользователя
 final class LikeViewController: UIViewController {
     // MARK: - Private Constant
+    
     private enum Constant {
         static let indentifierFollowText = "follow"
         static let indentifierLikeText = "like"
@@ -25,28 +26,34 @@ final class LikeViewController: UIViewController {
         case week
         case month
     }
+
     // MARK: - Private Visual Components
+    
     private let refreshControl: UIRefreshControl = {
         let ref = UIRefreshControl()
         ref.tintColor = .white
         return ref
     }()
-    private let allSection: [Section] = [ .follow, .today, .week, .month]
 
     // MARK: - Private @IBOutlet
     @IBOutlet private weak var likeTableView: UITableView!
+    
+    private let allSection: [Section] = [ .follow, .today, .week, .month]
 
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         cereateRefresh()
     }
+    
     // MARK: - Private Methods
     private func cereateRefresh() {
         likeTableView.refreshControl = refreshControl
         likeTableView.refreshControl?.endRefreshing()
     }
 }
+
+// MARK: - Подписываемся на делегаты UITableViewDataSource, UITableViewDelegate
 
 extension LikeViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -73,7 +80,7 @@ extension LikeViewController: UITableViewDataSource, UITableViewDelegate {
         case .follow:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifierFollowText, for: indexPath)
             return cell
-        
+    
         case .today:
             switch indexPath.row % 3 {
             case 0:

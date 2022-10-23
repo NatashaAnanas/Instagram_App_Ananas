@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  ProfilViewController.swift
 //  Instagram_App
 //
 //  Created by Анастасия Козлова on 17.10.2022.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-/// Контроллер поиска
-final class SearchViewController: UIViewController {
+/// Акаунт пользователя - шаблон на след урок
+final class ProfilViewController: UIViewController {
 
     // MARK: - Life cycle
     override func viewDidLoad() {

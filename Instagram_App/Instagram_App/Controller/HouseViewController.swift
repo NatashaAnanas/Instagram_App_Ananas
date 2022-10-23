@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HouseViewController.swift
 //  Instagram_App
 //
 //  Created by Анастасия Козлова on 17.10.2022.
@@ -9,14 +9,13 @@ import UIKit
 
 /// Главная страница - лента инстаграм
 final class HouseViewController: UIViewController {
-    // MARK: - Private VConstant
+    // MARK: - Private Constant
     private enum Constant {
         static let indentifireStoryText = "story"
         static let indentifirePostText = "post"
         static let indentifireRecText = "rec"
     }
-
-    // MARK: - IBOutlet
+    // MARK: - Private IBOutlet
     @IBOutlet private weak var instTableView: UITableView!
 
     // MARK: - Private Visual Components
@@ -44,7 +43,6 @@ final class HouseViewController: UIViewController {
         }
     }
 }
-
 extension HouseViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         8

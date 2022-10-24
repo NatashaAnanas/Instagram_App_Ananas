@@ -9,12 +9,14 @@ import UIKit
 
 /// Главная страница - лента инстаграм
 final class HouseViewController: UIViewController {
+    
     // MARK: - Private Constant
     private enum Constant {
         static let indentifireStoryText = "story"
         static let indentifirePostText = "post"
         static let indentifireRecText = "rec"
     }
+    
     // MARK: - Private IBOutlet
     @IBOutlet private weak var instTableView: UITableView!
 
@@ -31,6 +33,7 @@ final class HouseViewController: UIViewController {
         cereateRefresh()
     }
     // MARK: - Private Methods
+    
     private func cereateRefresh() {
         instTableView.refreshControl = refreshControl
         refreshControl.addTarget(self,
@@ -43,23 +46,28 @@ final class HouseViewController: UIViewController {
         }
     }
 }
+
 extension HouseViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        8
+        6
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifireStoryText, for: indexPath)
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifirePostText, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifirePostText,
+          for: indexPath)
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifireRecText, for: indexPath)
             return cell
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifirePostText, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifirePostText,
+          for: indexPath)
             return cell
         }
     }

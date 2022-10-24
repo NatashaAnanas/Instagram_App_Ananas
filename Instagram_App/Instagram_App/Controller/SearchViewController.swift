@@ -89,8 +89,6 @@ extension SearchViewController: UITableViewDataSource {
         case .collection:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifierCollectionText, for: indexPath)
                 return cell
-        default:
-            break
         }
         return UITableViewCell()
     }

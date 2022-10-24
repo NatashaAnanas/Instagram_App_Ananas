@@ -8,7 +8,7 @@
 import UIKit
 
 /// Ячейка - отображение фото
-class PhotoCollectionViewCell: UICollectionViewCell {
+final class PhotoCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Private IBOutlet
     @IBOutlet weak var photoImageView: UIImageView!

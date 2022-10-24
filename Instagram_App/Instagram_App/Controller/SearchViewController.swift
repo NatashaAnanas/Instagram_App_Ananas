@@ -19,11 +19,11 @@ final class SearchViewController: UIViewController {
         static let indentifierViewText = "view"
         static let indentifierCollectionText = "collection"
         static let indentifierImageCellText = "imageCell"
-        static let images = ["me", "me2", "me1", "sergey", "durovv", "valya", "we", "durov", "pavel", "дом1", "дом2"]
-        static let cells: [Cell] = [ .main, .info, .scroll, .chouse, .collection]
+        static let images = ["me", "me2", "me1", "me3", "me4", "me8", "me5", "durov", "me6", "me7"]
+        static let cellTypes: [CellType] = [ .main, .info, .scroll, .chouse, .collection]
     }
     
-    private enum Cell {
+    private enum CellType {
         case main
         case info
         case scroll
@@ -68,12 +68,12 @@ final class SearchViewController: UIViewController {
 extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        Constant.cells.count
+        Constant.cellTypes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch Constant.cells[indexPath.row] {
+        switch Constant.cellTypes[indexPath.row] {
         case .main:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.indentifierFirstText, for: indexPath)
                 return cell
